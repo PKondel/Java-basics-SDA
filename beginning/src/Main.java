@@ -1,7 +1,10 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        // tasks 1 - p. 34
+
+    // tasks 1 - p. 34
         // task 1
         String name = "Paweł";
         System.out.println("Witaj, " + name);
@@ -29,5 +32,24 @@ public class Main {
         int l = 10;
         String hex = String.format("%1$02X:%2$02X:%3$02X:%4$02X", i, j, k, l);
         System.out.println(hex);
+
+    // Tasks 2 - p. 36
+        // Task 1
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name2 = in.nextLine();
+        System.out.println("Witaj, " + name2);
+
+        // Task 2
+        int m = in.nextInt();
+        double n = in.nextDouble();
+        System.out.println((int) m + n);
+
+        // Task 3
+        System.out.print("Wprowadź pierwszą liczbę: ");
+        int i1 = in.nextInt();
+        System.out.print("Wprowadź drugą liczbę: ");
+        int i2 = in.nextInt();
+        System.out.println("Wynik dzielenia a/b = " + (double) + i1/i2);
     }
 }
