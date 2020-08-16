@@ -130,5 +130,196 @@ public class Main {
         } else if (naszaLiczba3.equals("dziewięć")) {
             System.out.println("(");
         }
+
+    // Tasks 5 - p. 47
+        // Task 1
+        int naszaLiczba4 = in.nextInt();
+        switch (naszaLiczba4) {
+            case 0:
+                System.out.println("Nasza liczba jest mniejsza od 10");
+                break;
+            case 1:
+                System.out.println("Nasza liczba jest mniejsza od 10");
+                break;
+            case 2:
+                System.out.println("Nasza liczba jest mniejsza od 10");
+                break;
+            case 3:
+                System.out.println("Nasza liczba jest mniejsza od 10");
+                break;
+            case 4:
+                System.out.println("Nasza liczba jest mniejsza od 10");
+                break;
+            case 5:
+                System.out.println("Nasza liczba jest mniejsza od 10");
+                break;
+            case 6:
+                System.out.println("Nasza liczba jest mniejsza od 10");
+                break;
+            case 7:
+                System.out.println("Nasza liczba jest mniejsza od 10");
+                break;
+            case 8:
+                System.out.println("Nasza liczba jest mniejsza od 10");
+                break;
+            case 9:
+                System.out.println("Nasza liczba jest mniejsza od 10");
+                break;
+            case 10:
+                System.out.println("Nasza liczba jest równa 10");
+                break;
+            default: System.out.println("Nasza liczba jest większa od 10");
+            break;
+        }
+
+        // Task 2
+        int naszaLiczba5 = in.nextInt();
+        switch (naszaLiczba5) {
+            case 0:
+                System.out.println(")");
+                break;
+            case 1:
+                System.out.println("!");
+                break;
+            case 2:
+                System.out.println("@");
+                break;
+            case 3:
+                System.out.println("#");
+                break;
+            case 4:
+                System.out.println("$");
+                break;
+            case 5:
+                System.out.println("%");
+                break;
+            case 6:
+                System.out.println("^");
+                break;
+            case 7:
+                System.out.println("&");
+                break;
+            case 8:
+                System.out.println("*");
+                break;
+            case 9:
+                System.out.println("(");
+                break;
+        }
+
+        // Task 3
+        String naszaLiczba6 = in.next();
+        switch (naszaLiczba6) {
+            case "zero":
+                System.out.println(")");
+                break;
+            case "jeden":
+                System.out.println("!");
+                break;
+            case "dwa":
+                System.out.println("@");
+                break;
+            case "trzy":
+                System.out.println("#");
+                break;
+            case "cztery":
+                System.out.println("$");
+                break;
+            case "pięć":
+                System.out.println("%");
+                break;
+            case "sześć":
+                System.out.println("^");
+                break;
+            case "siedem":
+                System.out.println("&");
+                break;
+            case "osiem":
+                System.out.println("*");
+                break;
+            case "dziewięć":
+                System.out.println("(");
+                break;
+        }
+
+        // Task 4
+        int naszaLiczba7 = in.nextInt();
+        switch (naszaLiczba7) {
+            case 0:
+                System.out.println("0");
+                break;
+            case 1:
+                System.out.println("1 0");
+                break;
+            case 2:
+                System.out.println("2 1 0");
+                break;
+            case 3:
+                System.out.println("3 2 1 0");
+                break;
+            case 4:
+                System.out.println("4 3 2 1 0");
+                break;
+            case 5:
+                System.out.println("5 4 3 2 1 0");
+                break;
+            case 6:
+                System.out.println("6 5 4 3 2 1 0");
+                break;
+            case 7:
+                System.out.println("7 6 5 4 3 2 1 0");
+                break;
+            case 8:
+                System.out.println("8 7 6 5 4 3 2 1 0");
+                break;
+            case 9:
+                System.out.println("9 8 7 6 5 4 3 2 1 0");
+                break;
+        }
+
+        // Task 5
+        double firstNumber = in.nextDouble();
+        double secondNumber = in.nextDouble();
+        System.out.println(firstNumber + " + " + secondNumber + " = " + (firstNumber + secondNumber));
+        System.out.println(firstNumber + " - " + secondNumber + " = " + (firstNumber - secondNumber));
+        String choice;
+        do {
+            choice = in.next();
+            if (choice.equals("suma")) {
+                System.out.println(firstNumber + " + " + secondNumber + " = " + (firstNumber + secondNumber));
+            } else if (choice.equals("różnica")) {
+                System.out.println(firstNumber + " - " + secondNumber + " = " + (firstNumber - secondNumber));
+            }
+
+            switch (choice) {
+                case "suma":
+                    System.out.println(firstNumber + " + " + secondNumber + " = " + (firstNumber + secondNumber));
+                    break;
+                case "różnica":
+                    System.out.println(firstNumber + " - " + secondNumber + " = " + (firstNumber - secondNumber));
+                    break;
+                case "iloczyn":
+                    System.out.println(firstNumber + " * " + secondNumber + " = " + (firstNumber * secondNumber));
+                    break;
+                case "iloraz":
+                    if (secondNumber == 0) {
+                        System.out.println("Nie można dzielić przez 0");
+                        break;
+                    }
+                    System.out.println(firstNumber + " / " + secondNumber + " = " + (firstNumber / secondNumber));
+                    break;
+            }
+        } while (!choice.equals("koniec"));
+
+        // Task 6
+        int analizedNumber = in.nextInt();
+        if (analizedNumber%2==0) {
+            System.out.println("Liczba jest parzysta.");
+        } else System.out.println("Liczba jest nieparzysta.");
+
+        int secondNumber2 = in.nextInt();
+        if (analizedNumber%secondNumber2==0) {
+            System.out.println("Pierwsza liczba jest podzielna przez drugą.");
+        } else System.out.println("Pierwsza liczba nie jest podzielna przez drugą.");
     }
 }
