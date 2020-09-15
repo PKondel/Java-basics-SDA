@@ -321,5 +321,54 @@ public class Main {
         if (analizedNumber%secondNumber2==0) {
             System.out.println("Pierwsza liczba jest podzielna przez drugą.");
         } else System.out.println("Pierwsza liczba nie jest podzielna przez drugą.");
+
+    // Tasks 6 - p. 52
+        // Task 1
+        for (int o = 1; o <= 10; o++) {
+            String product = in.next();
+            System.out.println("dodałem do koszyka " + product + ". To nasz " + o + " produkt!");
+        }
+
+        // Task 2
+        int r = 0;
+        for (int o = 0; o < 5; o++) {
+            int st = in.nextInt();
+            r += st;
+        }
+        System.out.println("Suma liczb wynosi " + r);
+
+        // Task 3
+        for (int o = 0; o < 3; o++) {
+            for (int p = 0; p < 2; p++) {
+                System.out.println(o + " : " + p);
+            }
+        }
+
+        // Task 4
+        int tu = in.nextInt();
+        for (int o = 0; o < tu; o++) {
+            for (int p = 0; p < tu; p++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // Task 5
+        int uv = in.nextInt();
+        String su = in.next();
+        for (int o = 0; o < uv; o++) {
+            for (int p = 0; p < uv; p++) {
+                System.out.print(su);
+            }
+            System.out.println();
+        }
+
+        // Task 6
+        for (int o = 0; o < uv; o++) {
+            for (int p = uv-o; p <= uv; p++) {
+                System.out.print(su);
+            }
+            System.out.println();
+        }
     }
 }
